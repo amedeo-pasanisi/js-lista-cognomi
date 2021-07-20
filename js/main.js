@@ -14,8 +14,13 @@ console.log("lista aggiornata: " + lista);
 // 3. stampa la lista ordinata alfabeticamente
 lista.sort();
 
+console.log("lista ordinata alfabeticamente:");
 for (var i = 0; i < lista.length; i++) {
     console.log(lista[i]);
 }
 
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
+console.log("lista ordinata alfabeticamente numerata:");
+for (var i = 0; i < lista.length; i++) {
+    console.log((i + 1) + " " + lista[i]);
+}
