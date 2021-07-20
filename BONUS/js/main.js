@@ -1,13 +1,14 @@
 // 1. chiedi all’utente il cognome
-var cognome;
-
-function startsWithCapital(cognome){
-    return word.charAt(0) === cognome.charAt(0).toUpperCase()
-}
-
 do {
-    cognome = prompt("inserisci il tuo cognome con la prima lettera maiuscola");
-} while (startsWithCapital(cognome) != true)
+    var cognome = prompt("inserisci il tuo cognome con la prima lettera maiuscola");
+
+    if (cognome.charAt(0) === cognome.charAt(0).toUpperCase()) {
+        flag = true;
+    } else {
+        flag = false;
+    }
+
+} while (flag != true);
 
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 var lista = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
